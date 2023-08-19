@@ -73,6 +73,30 @@ document.addEventListener('DOMContentLoaded', function () {
             background: "linear-gradient(to top right, #a05c62ff, #813953ff, #5c1d44ff, #36143dff, #28103bff, #1a0e3aff)",
             useFirstLetterEffect: false,
         },
+        3: {
+            title: "Una historia sin final.",
+            font: "'Borel', cursive",
+            lines: [
+                "¿Sabes de una historia… que no tiene un final?,",
+                "de esas que comienzan, y buscan perdurar,",
+                "tal vez toda una vida, para nada algo fugaz.",
+                "Te contaré de esta historia, en verdad es especial,",
+                "se escribe cada día, y con cada despertar,",
+                "eres su protagonista, tan hermosa y bella artista,",
+                "inspiración de mis momentos, de mi vida y de estos versos,",
+                "de mi espacio sideral, de esta historia sin final.",
+                "Y es así mi linda niña, con toda sinceridad…",
+                "Que eres todo lo que anhelo, por toda la eternidad.",
+                "De aquí hasta el infinito, sé que no va a terminar,",
+                "porque es mi amor por ti… esta historia sin final.",
+            ],
+            color: "white",
+            linesWeight: "500",
+            titleWeight: "1000",
+            size: "45px",
+            background: "linear-gradient(to bottom right, #FF4171, #FF5982, #FF708F, #FF879D, #FF9DAA, #FFB3B7, #FFACAF, #FF9D9A)",
+            useFirstLetterEffect: false,
+        },
     };
 
     const showLines = () => {
