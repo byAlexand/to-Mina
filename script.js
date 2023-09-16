@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 ".  .  .",
                 "- ¿ Q u i e r e s",
                 "- s e r",
-                "- m i",     
+                "- m i",
                 "- n o v i a ?",
-                "- ❤️", 
+                "- ❤️",
             ],
             color: "#BFBFBF",
             linesWeight: "200",
@@ -254,5 +254,41 @@ document.addEventListener('DOMContentLoaded', function () {
             rotate: true,
             slideShadows: false,
         },
+    });
+
+    const celebrateButton = document.querySelector('.celebrate-button');
+    const particlesContainer = document.querySelector('#particles-js');
+    const celebrationMessage = document.querySelector('.celebration-message');
+
+    let fadeTimeout;
+    let hideTimeout;
+
+    celebrateButton.addEventListener('click', () => {
+        clearTimeout(fadeTimeout);
+        clearTimeout(hideTimeout);
+
+        particlesContainer.style.opacity = "0";
+        particlesContainer.style.visibility = "hidden";
+        celebrationMessage.style.opacity = "0";
+        celebrationMessage.style.visibility = "hidden";
+
+        setTimeout(() => {
+            particlesContainer.style.opacity = "1";
+            particlesContainer.style.visibility = "visible";
+            celebrationMessage.style.opacity = "1";
+            celebrationMessage.style.visibility = "visible";
+        }, 50);
+
+        particlesJS.load('particles-js', 'path_to_particles.json', function () {
+            fadeTimeout = setTimeout(() => {
+                particlesContainer.style.opacity = "0";
+                celebrationMessage.style.opacity = "0";
+            }, 5000);
+
+            hideTimeout = setTimeout(() => {
+                particlesContainer.style.visibility = "hidden";
+                celebrationMessage.style.visibility = "hidden";
+            }, 7000);
+        });
     });
 });

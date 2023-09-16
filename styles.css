@@ -17,6 +17,68 @@ body {
     margin: 0;
 }
 
+.celebrate-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 35px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 11;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 12;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s, visibility 2s;
+}
+
+.celebration-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+    z-index: 13;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s, visibility 2s;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
 .poem-container {
     margin-top: 5rem;
     margin-bottom: 5rem;

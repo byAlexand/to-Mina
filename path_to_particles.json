@@ -1,0 +1,60 @@
+{
+    "particles": {
+        "number": {
+            "value": 150,
+            "density": {
+                "enable": true,
+                "value_area": 800
+            }
+        },
+        "color": {
+            "value": [
+                "#ff66ff",
+                "#ff148a",
+                "#9400D3",
+                "#8a2be2",
+                "#e376b0",
+                "#de5796"
+            ]
+        },
+        "shape": {
+            "type": "circle"
+        },
+        "opacity": {
+            "value": 1,
+            "random": true,
+            "anim": {
+                "enable": false
+            }
+        },
+        "size": {
+            "value": 8,
+            "random": true,
+            "anim": {
+                "enable": false
+            }
+        },
+        "line_linked": {
+            "enable": false
+        },
+        "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "bottom",
+            "random": false,
+            "straight": false,
+            "out_mode": "out"
+        }
+    },
+    "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+                "enable": false
+            },
+            "onclick": {
+                "enable": false
+            }
+        }
+    }
+}
